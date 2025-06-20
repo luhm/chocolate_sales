@@ -2,6 +2,9 @@ select *
 from chocolate_sales_data
 limit 10
 
+select count(distinct "Product")
+from chocolate_sales_data
+
 -- Identify purchasing patterns across different customer segments.
 -- vou tentar identificar o padrão de compra por país
 	-- para isso eu preciso saber quantos produtos são comprados por cada país
@@ -14,7 +17,7 @@ select count("Boxes Shipped") as boxes_per_country,
 
 from chocolate_sales_data
 
-group by "Country"
+group by "Country", "Product"
 
 -- qual o chocolate favorito? 50% Dark bites
 

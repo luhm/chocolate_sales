@@ -6,7 +6,6 @@ With amount_sub as (
 	cast(replace(substring("Amount", 2, 10), ',', '') as float) as amount_cleaned
 	from chocolate_sales_data
 )
-
 select "Country",
         "Product",
         sum("Boxes Shipped") as boxes_total,
@@ -16,3 +15,4 @@ from amount_sub
 
 GROUP BY "Product", "Country"
 ORDER BY "Country", sum("Boxes Shipped") desc
+

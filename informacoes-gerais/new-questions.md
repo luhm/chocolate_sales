@@ -18,7 +18,7 @@ Conversa com o chat-gpt
 
 ## Product Performance
 
-1. Which chocolate products have the highest and lowest sales volumes?
+1. Which chocolate products have the highest and lowest sales volumes? 
 
 2. What is the revenue breakdown by product category or product line?
 
@@ -33,8 +33,11 @@ Conversa com o chat-gpt
 1. Which countries or regions are growing in sales over time?
 
 2. Are there any underperforming regions or countries that require attention?
+usando a querie em [boxes_amount_per_country](../queries/boxes_amount_per_country.sql), podemos perceber que duas regiões perfomam muito parecido em numero de caixas (USA e New Zeland), porém NZ tem um valor arrecadado bem menor.
+
 
 3. What are the top-selling products in each country?
+[fav_choc_amount_per_country](../queries/fav_choc_amount_per_country.sql)
 
 4. How does the average sale amount vary between countries?
 
