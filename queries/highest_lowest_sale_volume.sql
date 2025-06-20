@@ -8,6 +8,8 @@ select "Product",
     sum("Boxes Shipped") as qntd_de_caixas
 from amount_sub
 group by "Product"
+order by "Product"
+
 
 
 

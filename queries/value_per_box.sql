@@ -11,5 +11,5 @@ qntd_product as (
     group by "Product"
 )
 select *,
-    qntd_de_valor / qntd_de_caixas
+    trunc((qntd_de_valor / qntd_de_caixas)::numeric, 2) as valor_por_caixa
 from qntd_product

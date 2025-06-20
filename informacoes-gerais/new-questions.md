@@ -21,11 +21,18 @@ Conversa com o chat-gpt
 1. Which chocolate products have the highest and lowest sales volumes? 
 
 Para saber o valor e a quantidade de caixa geral, por sabor: [Highest_lowest_sale_volume](../queries/highest_lowest_sale_volume.sql)
+
 Para saber o valor e a quantidade minimas e máximas, por sabor: [Highest_lowest_sale_volume_2](../queries/highest_lowest_sale_volume_2.sql), considerando todos os países
+
+para saber apenas a quantidade min e máxima total (independente do sabor), [min_max_caixas_vendidas](../queries/min_max_caixas_vendidas.sql)
 
 2. What is the revenue breakdown by product category or product line?
 
+Não tenho informações suficientes para calcular (precisaria de dados sobre os gastos também).
+
 3. Are there any seasonal trends in the sale of specific products?
+
+Para calcular isso eu preciso ter uma janela de tempo para entender o que é considerado comum, e o que é considerado diferente, e depois entender se essa diferença tem uma époda do ano em comum
 
 4. Which product has the highest revenue per box?
 
@@ -33,13 +40,15 @@ Em [value_per_box](../queries/value_per_box.sql) da para ver o quanto custa a ca
 
 5. How does product preference vary by country or region?
 
+É possível perceber que a maior parte dos países preferem diferentes chocolates.
+
 ## Customer and Geographic Insights
 
 1. Which countries or regions are growing in sales over time?
 
 2. Are there any underperforming regions or countries that require attention?
 
-usando a querie em [boxes_amount_per_country](../queries/boxes_amount_per_country.sql), podemos perceber que duas regiões perfomam muito parecido em numero de caixas (USA e New Zeland), porém NZ tem um valor arrecadado bem menor.
+Usando a querie em [boxes_amount_per_country](../queries/boxes_amount_per_country.sql), podemos perceber que duas regiões perfomam muito parecido em numero de caixas (USA e New Zeland), porém NZ tem um valor arrecadado bem menor.
 
 
 3. What are the top-selling products in each country?

@@ -4,8 +4,8 @@ With amount_sub as (
 	from chocolate_sales_data
 )
 select "Product",
-    max(amount_cleaned) as valor_max,
-    min(amount_cleaned) as valor_min,
+    max(amount_cleaned) as amount_max,
+    min(amount_cleaned) as amount_min,
     max("Boxes Shipped") as qntd_max_de_caixas,
     min("Boxes Shipped") as qntd_min_de_caixas
 from amount_sub
